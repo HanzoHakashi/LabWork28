@@ -12,31 +12,38 @@ public class Product {
         switch (product){
             case 1:
                 setType("Мясо");
-                setWeight(10);
+                setWeight(14);
+                setPrice(25);
                 break;
             case 2:
                 setType("Сухофрукты");
                 setWeight(6);
+                setPrice(15);
                 break;
             case 3:
                 setType("Зерно");
-                setWeight(4);
+                setWeight(14);
+                setPrice(17);
                 break;
             case 4:
                 setType("Мука");
                 setWeight(5);
+                setPrice(16);
                 break;
             case 5:
                 setType("Ткани");
                 setWeight(12);
+                setPrice(22);
                 break;
             case 6:
                 setType("Краска");
                 setWeight(13);
+                setPrice(24);
                 break;
             case 7:
                 setType("Скума");
                 setWeight(14);
+                setPrice(25);
                 break;
         }
     }
