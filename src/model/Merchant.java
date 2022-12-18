@@ -9,7 +9,7 @@ public class Merchant {
 
     public void merchantInitialMoney(){
         java.util.Random r = new java.util.Random();
-        int money = r.nextInt(20)+80;
+        int money = r.nextInt(100)+100;
         setMoney(money);
     }
 
