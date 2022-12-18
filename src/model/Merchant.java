@@ -9,8 +9,15 @@ public class Merchant {
 
     public void merchantInitialMoney(){
         java.util.Random r = new java.util.Random();
-        int money = r.nextInt(100)+80;
+        int money = r.nextInt(20)+80;
         setMoney(money);
+    }
+
+    public int setMerchantSpeed(){
+        java.util.Random r = new java.util.Random();
+        setSpeed(r.nextInt(3)+3);
+        int speed = getSpeed();
+        return speed;
     }
 
     public int getCarrying() {
