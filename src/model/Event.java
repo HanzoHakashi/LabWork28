@@ -162,13 +162,14 @@ public class Event {
                 }
             } else if (products.isEmpty()==true) {
                 System.out.println("У Вас нет товара на продажу.");
-            } else if (choice==3 && merchant.getMoney()>10) {
-                System.out.println("Вы решили поесть и переночевать в трактире, стоимость услуг составила 10 золотых");
+            } else if (choice==3 && merchant.getMoney()>5) {
+                System.out.println("Вы решили поесть и переночевать в трактире, стоимость услуг составила 5 золотых");
+                merchant.setMoney(merchant.getMoney()-5);
                 System.out.printf("Текущее количество золота %s. Текущая грузоподъемность %s.%n",merchant.getMoney(),merchant.getCarrying());
                 Game game = new Game();
                 game.trip(distance,speed, merchant,products);
                 break;
-            } else if (choice==3 && merchant.getMoney()<10) {
+            } else if (choice==3 && merchant.getMoney()<5) {
                 System.out.println("У Вас недостаточно денег для ночлега, Вам нужно продать товар");
             }
         }

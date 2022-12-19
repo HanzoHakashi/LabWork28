@@ -151,13 +151,12 @@ public class Game {
                                 break;
                             case 8:
                                 events.inn(distance, speed, products, merchant);
-                                distance -= speed;
-                                System.out.printf("Скорость повозки %s.До пункта назначения осталось %s%n", speed, distance);
                                 break;
                             case 9:
                                 events.goodSpoiled(products);
                                 distance -= speed;
                                 System.out.printf("Скорость повозки %s.До пункта назначения осталось %s%n", speed, distance);
+                                break;
                         }
                     } else if (distance<=0){
                         System.out.println("Вы прибыли в пункт назначения");
